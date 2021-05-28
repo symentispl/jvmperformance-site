@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="pl">
 
 <head>
    <meta charset="UTF-8">
-   <title>Symentis - Współbieżność w Javie</title>
+   <title>{{ .Site.Params.Title }} {{ .Site.Params.TitleSeparator }} {{ .Site.Params.TitleAddition }}</title>
    <meta name="viewport" content="width=device-width">
-
+   <meta name="description" content="{{ .Site.Params.Description }}"/>   
 
    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
@@ -180,12 +180,17 @@
       <div class="container">
          <div class="row">
             <div class="col-lg-6 col-sm-6 col-md-6 PR_79">
-               <h2 class="sec_title MB_45">Jesteś początkująym programistą? Super!</h2>
+               <h2 class="sec_title MB_45">Jeśli wszystko wydaje się pod kontrolą, po prostu nie jedziesz wystarczająco szybko!</h2>
                <p class="sec_desc">
-                  Wątki i współbieżność budzą w Tobie strach? Mam dla Ciebie <strong>weekendowy kurs online</strong>, który na zawsze pozwoli Ci się pozbyć takich obaw i lęków. Podczas pięciu sobotnich spotkań poznasz bliżej “concurrency primitives” dostępne
-                  w Java SDK, czyli pakiet java.util.concurrent. Dzięki zadaniom domowym, którym poświęcisz <strong>2-3 godzin w tygodniu</strong>, nauczysz się jak z podstawowych elementów, takich jak: kolejki, blokady, czy bariery budować czytelne rozwiązania,
-                  jak analizować ich wydajność i jak je testować.
-               </p>
+                  Czy zastanawiałeś się kiedyś, co trzeba zrobić, aby Twój kod działał szybciej?
+                  Czy zastanawiałeś się kiedyś, jak zostać „człowiekiem od wydajności”?
+                  Być może zajmujesz się wydajnością, od czasu do czasu, od jednej awarii do kolejnego incydentu "severity 1"?
+                  I masz w sobie to dziwne uczucie, nieprzyjemne uczucie że robisz to źle?
+                  
+                  Być może nigdy nie przejmowałeś się jak szybko działa Twój kod. Od wieków wiadomo jest, że zawsze
+                  jest to problem z bazą danych (lub kogoś innego problem).
+                  A może, po prostu trudno się przyznać, że nie wiesz, jak usprawnić działanie swojego kodu?     
+               </p>             
                <a class="common_btn red_bg" href="https://2020-java-concurrency-primitives-nov.konfeo.com/pl/groups"><span>Kup teraz</span></a>
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6">
@@ -204,7 +209,7 @@
       <div class="container">
          <div class="row">
             <div class="col-lg-12 text-center">
-               <h2 class="sec_title">Współbieżność to nasza programistyczna codzienność. Czas ją ujarzmić!</h2>
+               <h2 class="sec_title">Samo mięso, zero warzyw.</h2>
             </div>
          </div>
          <div class="row row-center">
@@ -216,13 +221,23 @@
             <div class="col-lg-7 col-sm-7 col-md-7">
                <div class="wh_choose">
                   <p>
-                     Dlaczego ten kurs online jest dla Ciebie? Wydajność i optymalizacja brzmią dobrze, ale to szkolenie da Ci znacznie więcej.
+                     Celem tego warsztatu jest łagodne wprowadzenie Cię w świat wydajności na platformie JVM.
+                     Nie wiesz nic o JMH, JFR, async profiler, dlaczego twój kod musi być wygrzewany? Nigdy nie widziałeś "flamegraph"?
+                     Spokojnie. Tego wszystkiego dowiesz się podczas jednodniowego warsztatu.
+   
+                     Skupimy się nie tylko na narzędziach, ale także na procesie i technikach optymalizowania wydajności.
+                  
+                     Weźmiemy na warsztat jeden z sztandarowych modeli przetwarzania danych, "map reduce". Od prostej jednowątkowej
+                     implementacji, po wielowątkowe monstrum oparte o fork-join pool, będziemy poznawać techniki i narzędzia pracy
+                     z testami wydajnościowymi ( w skali micro, znanymi także jako "microbenchmark").               </p>   
                   </p>
+                  <!--
                   <ul>
                      <li><i class="fa fa-check-square"></i>Będziesz dostarczać stabilniejsze rozwiązania i… będziesz je dostarczać szybciej.</li>
                      <li><i class="fa fa-check-square"></i>Wreszcie wykorzystasz możliwości sprzętu.</li>
                      <li><i class="fa fa-check-square"></i>Ujarzmisz najnowsze funkcjonalności Javy z zakresu programowania współbieżnego.</li>
                   </ul>
+                  -->
                </div>
             </div>
          </div>
@@ -572,7 +587,7 @@
                <aside class="widget social_widget">
                   <h3 class="widget_title">Social Media</h3>
                   <ul>
-                     <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                     <li><a href="{{ .Site.Params.SchemaTwitter }}"><i class="fa fa-twitter"></i>Twitter</a></li>
                      <li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
                      <li><a href="#"><i class="fa fa-youtube-play"></i>Youtube</a></li>
                   </ul>

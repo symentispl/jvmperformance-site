@@ -1,7 +1,7 @@
-title = "Hyas"
+title = "Symentis"
 titleSeparator = "-"
-titleAddition = "Hyas Child Theme"
-description = "Hugo starter helping you build modern websites."
+titleAddition = "Szkolenia wydajność aplikacji Java"
+description = "Szkolenia - wydajność aplikacji Java z wykorzystaniem Java Microbenchmark Harness (JMH), Java Flight Recorder, async profiler."
 
 images = ["hyas.png"]
 
@@ -9,11 +9,11 @@ twitterSite = "@henkverlinde"
 twitterCreator = "@henkverlinde"
 facebookAuthor = "verlinde.henk"
 facebookPublisher = "verlinde.henk"
-ogLocale = "en_US"
+ogLocale = "pl"
 
 schemaType = "Organization"
 schemaLogo = "logo-hyas.png"
-schemaTwitter = "https://twitter.com/henkverlinde"
+schemaTwitter = "https://twitter.com/j_palka"
 schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
