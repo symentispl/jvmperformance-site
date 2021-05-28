@@ -5,7 +5,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+languageCode = "pl"
 paginate = 7
 rssLimit = 10
 
