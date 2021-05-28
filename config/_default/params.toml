@@ -5,8 +5,8 @@ description = "Szkolenia - wydajność aplikacji Java z wykorzystaniem Java Micr
 
 images = ["hyas.png"]
 
-twitterSite = "@henkverlinde"
-twitterCreator = "@henkverlinde"
+twitterSite = "@j_palka"
+twitterCreator = "@j_palka"
 facebookAuthor = "verlinde.henk"
 facebookPublisher = "verlinde.henk"
 ogLocale = "pl"
@@ -14,8 +14,8 @@ ogLocale = "pl"
 schemaType = "Organization"
 schemaLogo = "logo-hyas.png"
 schemaTwitter = "https://twitter.com/j_palka"
-schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaGitHub = "https://github.com/h-enk"
+schemaLinkedIn = "https://www.linkedin.com/in/jpalka/"
+schemaGitHub = "https://github.com/symentispl"
 schemaSection = "blog"
 
 siteLinksSearchBox = false

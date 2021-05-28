@@ -8,6 +8,8 @@
    <meta name="description" content="{{ .Site.Params.Description }}"/>   
    <meta name="facebook-domain-verification" content="0j09trt6o4i7a03ncwx8njq80g6dkw" />
 
+   {{ template "_internal/opengraph.html" . }}
+
    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
    <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
@@ -151,7 +153,7 @@
                   <div class="tp-caption tp-resizeme normalWraping layer_2" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
                                  {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-x="center" data-y="center" data-hoffset="['0', '100', '120', '0']" data-voffset="['8', '0', '0', '0']" data-width="100%" data-height="['auto]"
                      data-whitesapce="['normal']" data-word-wrap="['normal']" data-white-break="['break-all']" data-fontsize="['75', '65', '40', '30']" data-lineheight="['80', '70', '50', '44']" data-fontweight="700" data-letterspacing="['4.4', '4.4', '4.4', '2']"
-                     data-color="#fff" data-textAlign="['center', 'center', 'center', 'center']">Współbieżność w Javie<br/> z wykorzystaniem<br/> “Concurrency Primitives”</div>
+                     data-color="#fff" data-textAlign="['center', 'center', 'center', 'center']">Wydajność aplikacji Java<br/> z wykorzystaniem<br/> microbenchmark</div>
                   <div class="tp-caption tp-resizeme normalWraping layer_3" data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
                                  {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-x="center" data-y="center" data-hoffset="['0', '100', '120', '0']" data-voffset="['273', '220', '190', '140']" data-width="100%"
                      data-height="['auto]" data-whitesapce="['normal']" data-fontsize="16" data-lineheight="" data-fontweight="400" data-textAlign="['center', 'center', 'center', 'center']"><a href="#wiecej" class="common_btn red_bg"><span>Dowiedz się więcej</span></a></div>
@@ -183,10 +185,10 @@
             <div class="col-lg-6 col-sm-6 col-md-6 PR_79">
                <h2 class="sec_title MB_45">Jeśli wszystko wydaje się pod kontrolą, po prostu nie jedziesz wystarczająco szybko!</h2>
                <p class="sec_desc">
-                  Czy zastanawiałeś się kiedyś, co trzeba zrobić, aby Twój kod działał szybciej?
-                  Czy zastanawiałeś się kiedyś, jak zostać „człowiekiem od wydajności”?
-                  Być może zajmujesz się wydajnością, od czasu do czasu, od jednej awarii do kolejnego incydentu "severity 1"?
-                  I masz w sobie to dziwne uczucie, nieprzyjemne uczucie że robisz to źle?
+                  Czy zastanawiałeś się kiedyś, co trzeba zrobić, aby Twój kod działał szybciej?<br/>
+                  Czy zastanawiałeś się kiedyś, jak zostać „człowiekiem od wydajności”?<br/>
+                  Być może zajmujesz się wydajnością, od czasu do czasu, od jednej awarii do kolejnego incydentu "severity 1"?<br/>
+                  I masz w sobie to dziwne uczucie, nieprzyjemne uczucie że robisz to źle?<br/>
                   
                   Być może nigdy nie przejmowałeś się jak szybko działa Twój kod. Od wieków wiadomo jest, że zawsze
                   jest to problem z bazą danych (lub kogoś innego problem).
@@ -319,42 +321,42 @@
          <div class="row">
             <div class="col-lg-6 col-sm-6 col-md-6">
                <div class="singleClient_2">
-                  <h3>Czym jest współbieżność?</h3>
-                  <p>Budowa współczesnych procesorów, modele spójności i granice współbieżności</p>
+                  <h3>Tworzenie microbenchmark</h3>
+                  <p>Poznajemy <a href="https://github.com/openjdk/jmh">Java Microbenchmark Harness (JMH)</a></p>
                </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6">
                <div class="singleClient_2">
-                  <h3>Zamki do drzwi i broń atomowa</h3>
-                  <p>Java Memory Model, mechanizmy synchronizacji, zmienne atomowe i lock free programming</p>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-6 col-sm-6 col-md-6">
-               <div class="singleClient_2">
-                  <h3>Kolejki rządzą światem</h3>
-                  <p>Kolejki w Java, bounded vs unbounded, blocking vs nonblocking. Poznajemy JCStress</p>
-               </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-md-6">
-               <div class="singleClient_2">
-                  <h3>Bariery, lasery i inne bajery</h3>
-                  <p>CountDownLatch, CyclicBarier, Semaphor i Phaser</p>
+                  <h3>Profilery</h3>
+                  <p>Java Flight Recorder, async profiler, perfasm</p>
                </div>
             </div>
          </div>
          <div class="row">
             <div class="col-lg-6 col-sm-6 col-md-6">
                <div class="singleClient_2">
-                  <h3>Pracownicy biurowi i czarna materia</h3>
-                  <p>Pule wątków, ForkJoin, ManagedBlock i CountedCompleter</p>
+                  <h3>Flamegraph</h3>
+                  <p>Generowanie i interpretacja pomiarów z wykorzystanien <a href="http://www.brendangregg.com/flamegraphs.html">flamegraph</a></p>
                </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6">
                <div class="singleClient_2">
-                  <h3>Co się wydarzyło w Las Vegas?</h3>
-                  <p>happens-before, sequential consistency i innej zagadki</p>
+                  <h3>Optymalne wykorzystanie CPU</h3>
+                  <p>Jak wycisnąć ostatnie cykle procesora z wykorzystaniem java.util.concurrent i nie przesolić?</p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-6 col-sm-6 col-md-6">
+               <div class="singleClient_2">
+                  <h3>Powstrzymajmy garbage collector</h3>
+                  <p>Jak pozbyć się zbędnych alokacji pamięci?</p>
+               </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-md-6">
+               <div class="singleClient_2">
+                  <h3>Zrozumieć kompilator just-in-time</h3>
+                  <p>Skąd wiemy, że JVM zooptymalizował nasz kod, i jak skutecznie mu w tym przeszkadzać? :)</p>
                </div>
             </div>
          </div>
@@ -369,27 +371,27 @@
                <div class="features_content">
                   <h2 class="sec_title">Dla kogo to szkolenie?</h2>
                   <p class="sec_desc">
-                     Java 8 nie kryje przed Tobą żadnych tajemnic? To szkolenie jest dla Ciebie! Podczas szkolenia będziemy wykorzystywać Java 11. Znajomość tematów wątków i współbieżności nie jest wymagana.
+                     Czujesz się komfortowo z Java 8? Nie boisz się pracy z konsolą? Jesteś gotowy, że prowadzący nie zawsze ma rację, ale bardzo się stara?
                   </p>
                   <div class="singleFeature">
                      <div class="f_count">01</div>
-                     <h3>Spotykamy się raz w tygodniu</h3>
+                     <h3>Czujesz, że to czas na zmianę?</h3>
                      <p>
-                        Spotykamy się raz w tygodniu podczas webinaru.
+                        ciekawość to pierwszy stopień do piekła, lecz grzeczni programiści słuchają się swojego PO,a niegrzeczni kręcą wydajność ;)
                      </p>
                   </div>
                   <div class="singleFeature">
                      <div class="f_count">02</div>
-                     <h3>Zadanie domowe</h3>
+                     <h3>Chciałbyś zrozumieć?</h3>
                      <p>
-                        Co tydzień otrzymasz ode mnie zadanie domowe. Wykonasz je GitHub jako pull requesty.
+                        kiedy microbenchmarki kłamią a Twoja intuicja podpowiada Ci, że jest inaczej?
                      </p>
                   </div>
                   <div class="singleFeature">
                      <div class="f_count">03</div>
-                     <h3>Dostęp do trenera</h3>
+                     <h3>Chcesz poszerzyć swój warsztat?</h3>
                      <p>
-                        Przez cały czas trwania szkolenia będę dla Ciebie dostępny na kanale na Slack. Odpowiem na Twoje pytania, pomogę w kolejnych zadaniach.
+                        szukasz nowych technik, narzędzi, możliwości, odpowiedzi na pytania które Cię nurtują w kwestii wydajności Java
                      </p>
                   </div>
                </div>
