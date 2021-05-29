@@ -29,8 +29,15 @@
    <link rel="icon" type="image/png" href="images/favicon.png">
    <link rel="canonical" href="https://jvmperformance.pl/">
 
-   {{ template "_internal/google_analytics.html" . }}
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-61VDL3NFMS"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-61VDL3NFMS');
+   </script>
 </head>
 
 <body>
