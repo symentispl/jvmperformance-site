@@ -236,11 +236,11 @@ License URI:
     }
     .ab_img1{
         position: relative;
-        margin: 50px 0 0;
+        margin: 50px 0 0;     
     }
     .ab_img2{
         position: relative;
-        top: 30px;
+        top: 30px;    
     }
     .ab_img2:after{
         display: none;
