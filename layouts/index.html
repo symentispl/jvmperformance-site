@@ -217,24 +217,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-               <th scope="row">XX-XX-XXXX xx:xx</th>
-               <td><a href=''>MAPS LINK</a></td>
-               <td>PRICE</td>
-               <td><a href=''>TPAY LINK</a></td>
-              </tr>
-              <tr>
-               <th scope="row">XX-XX-XXXX xx:xx</th>
-               <td><a href=''>MAPS LINK</a></td>
-               <td>PRICE</td>
-               <td><a href=''>TPAY LINK</a></td>
-              </tr>
-              <tr>
-               <th scope="row">XX-XX-XXXX xx:xx</th>
-               <td><a href=''>MAPS LINK</a></td>
-               <td>PRICE</td>
-               <td><a href=''>TPAY LINK</a></td>
-              </tr>
+               {{ range $training := .Site.Data.trainings}}
+                  <tr>
+                     <th scope="row">{{ $training.date }}</th>
+                     <td><a href='{{ $training.locationUrl }}'>{{ $training.locationName }}</a></td>
+                     <td>{{ $training.price }}</td>
+                     <td><a href='{{ $training.paymentUrl }}'>Zapłać z TPAY</a></td>
+                    </tr>
+               {{ end }}
             </tbody>
           </table>
       </div>

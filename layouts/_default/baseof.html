@@ -145,9 +145,8 @@
 <!-- Search From -->
 
 <section class="commonSection client_2">
-  <div class="container">
-    <div class="row">
-      {{ .Page.Content }}
+  <div class="container confirmation">
+    {{ .Page.Content }}
   </div>
 </section>
 <footer class="footer_1">
@@ -196,7 +195,6 @@
   </div>
 </footer>
 
-<a id="backToTop" href="#" class=""><i class="fa fa-angle-double-up"></i></a>
 
 <!-- Include All JS -->
 {{ $jquery := resources.Get "js/jquery.js" | resources.Minify }}

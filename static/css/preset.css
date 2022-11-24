@@ -187,6 +187,22 @@ ul li {
     z-index: 2;
 }
 
+.confirmation{
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+
+.confirmation h1{
+    color: #eb4c1c;
+    font-size: 50px;
+}
+
+.confirmation h4{
+    color: #0484cc;
+    font-size: 25px;
+}
+
 .grays {
     background: #f5f6fa;
 }
