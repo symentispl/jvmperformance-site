@@ -1905,7 +1905,9 @@ License URI:
 / 18. Why Choose Us Section
 ------------------------------------------------------*/
 
-.chooseUs {}
+.ab_agency{
+    padding-bottom: 0;
+}
 
 .chooseUs img {
     width: 100%;
@@ -4063,7 +4065,7 @@ textarea.input-form:focus {
 
 @media(max-width: 992px) {
     .header_01 {
-        padding: 20px!important;
+        padding: 0px!important;
     }
     .mainmenu ul li {
         padding: 0 20px 0 0 !important;
