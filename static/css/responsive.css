@@ -132,7 +132,8 @@ License URI:
     }
 
     .header_01{
-        padding: 39px 0 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .navigator{
         padding-top: 0;

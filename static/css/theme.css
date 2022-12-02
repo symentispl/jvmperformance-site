@@ -79,6 +79,7 @@ License URI:
     background: transparent;
     padding: 20px 40px;
     border-bottom: 2px solid rgba(255, 255, 255, .10);
+    padding: 0px!important;
 }
 
 .header_02 {
@@ -4064,9 +4065,6 @@ textarea.input-form:focus {
 }
 
 @media(max-width: 992px) {
-    .header_01 {
-        padding: 0px!important;
-    }
     .mainmenu ul li {
         padding: 0 20px 0 0 !important;
     }
