@@ -4076,3 +4076,8 @@ textarea.input-form:focus {
         margin-left: -15px;
     }
 }
+
+.tablepadding{
+    padding-left: 120px;
+    padding-right: 120px;
+}
