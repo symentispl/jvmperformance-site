@@ -218,11 +218,12 @@
                  </tr>
                </thead>
                <tbody>
-                  {{ range $training := .Site.Data.trainings}}
+                  {{ $trainings := getJSON "https://api.payment.jvmperformance.pl/courses?client=jvmperformance" }}
+                  {{ range $training := $trainings }}
                      <tr>
                         <th scope="row">{{ $training.date }}</th>
-                        <td><a href='{{ $training.locationUrl }}'>{{ $training.locationName }}</a></td>
-                        <td>{{ $training.price }}</td>
+                        <td><a href='{{ $training.location }}'>{{ $training.name }}</a></td>
+                        <td>{{ $training.amount }}</td>
                         <td><a href='{{ $training.paymentUrl }}'>Zapłać z TPAY</a></td>
                        </tr>
                   {{ end }}
