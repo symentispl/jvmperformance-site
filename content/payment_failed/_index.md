@@ -1,4 +1,6 @@
 ---
 ---
+
 # Płatność nie powiodła się
-#### [Powrót](/#tabela "Powrót do strony głównej")
+
+## [Powrót](/#tabela "Powrót do strony głównej")
