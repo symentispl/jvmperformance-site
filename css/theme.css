@@ -79,6 +79,19 @@ License URI:
     background: transparent;
     padding: 20px 40px;
     border-bottom: 2px solid rgba(255, 255, 255, .10);
+    padding: 0px!important;
+}
+
+.header_02 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background: transparent;
+  padding: 20px 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, .10);
+  background-color: black;
 }
 
 .logo {
@@ -507,10 +520,6 @@ License URI:
 
 .centerit {
     text-align: center;
-}
-
-.ab_agency {
-    padding-bottom: 147px;
 }
 
 .PR_79 {
@@ -1465,7 +1474,7 @@ License URI:
 
 .footer_1 {
     position: relative;
-    padding: 130px 0 0;
+    padding: 60px 0 0;
     background: url(../images/bg/5.jpg) no-repeat center center / cover;
 }
 
@@ -1897,7 +1906,9 @@ License URI:
 / 18. Why Choose Us Section
 ------------------------------------------------------*/
 
-.chooseUs {}
+.ab_agency{
+    padding-bottom: 0;
+}
 
 .chooseUs img {
     width: 100%;
@@ -4054,9 +4065,6 @@ textarea.input-form:focus {
 }
 
 @media(max-width: 992px) {
-    .header_01 {
-        padding: 20px!important;
-    }
     .mainmenu ul li {
         padding: 0 20px 0 0 !important;
     }
@@ -4067,4 +4075,9 @@ textarea.input-form:focus {
         width: 160px;
         margin-left: -15px;
     }
+}
+
+.tablepadding{
+    padding-left: 120px;
+    padding-right: 120px;
 }

@@ -1587,6 +1587,11 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.btm-mrgn {
+  padding-bottom: 60px;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
